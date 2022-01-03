@@ -138,7 +138,8 @@ export function CatchBoundary() {
   }
 }
 
-export function ErrorBoundary() {
+export function ErrorBoundary(error: Error) {
+  console.log(error);
   return (
     <div className="error-container">
       Something unexpected went wrong. Sorry about that.
